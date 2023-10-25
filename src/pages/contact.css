@@ -1,0 +1,10 @@
+.page__header{
+    background-color: #222222;
+    height: 120px;
+    color : White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+}
