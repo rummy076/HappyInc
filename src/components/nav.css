@@ -1,41 +1,59 @@
-.nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    font-family: "Droid Serif", Georgia, serif;
-    font-weight: 400;
-  }
-  
-  .nav__logo {
-    color: white;
-    font-size: 24px;
-    padding: 24px;
-  }
-  
-  .nav__list {
-    padding: 20px;
-    list-style: none; /* Remove bullet points */
-    position: relative; /* Add relative positioning for pseudo-elements */
-  }
-  
-  .nav__list:not(:last-child)::before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 1px; /* Adjust the width for your desired line thickness */
-    background-color: #222222;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  
-  .nav__list a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Set the text color to white */
-  }
-  
-  .nav__links {
-    display: flex; /* Make the list items display horizontally */
-  }
-  
+.nav {
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  padding-top: 16px;
+}
+
+.header__logo--img {
+  object-fit: contain;
+  flex: 1;
+  width: 88px;
+  margin-right: 96px;
+}
+
+.header__links {
+  display: flex;
+  gap: 16px;
+}
+
+.header__links > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__right > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 0;
+  position: relative;
+}
+
+.header__menu > .fa-bars,
+.fa-xmark {
+  position: 2;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.headr__link--hidden{
+    visibility: hidden;
+}

@@ -1,60 +1,35 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./nav.css"; // Import the CSS file
+import myImage from '../images/happyinclogo.jpg';
 
-function Nav() {
+function Nav({ isMenuOpen, setIsMenuOpen }) {
   return (
-    <nav>
-      <div className="nav__container">
-        <div className="nav__logo">
-          <Link className="nav__logo" to="/">Happy Inc.</Link>
-        </div>
-        <ul className="nav__links">
-          <li className="nav__list">
-            <NavLink to="/" exact activeClassName="active">
-              HOME
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/about" activeClassName="active">
-              ABOUT
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/happyblog" activeClassName="active">
-              HAPPYBLOG
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/blog" activeClassName="active">
-              BLOG
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/contact" activeClassName="active">
-              CONTACT
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/book-a-session" activeClassName="active">
-              BOOK A SESSION
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/join-us" activeClassName="active">
-              JOIN US
-            </NavLink>
-          </li>
-          <li className="nav__list">
-            <NavLink to="/how-to" activeClassName="active">
-              HOW TO
-            </NavLink>
-          </li>
-        </ul>
+    <div className="nav">
+      <div className="header__logo">
+        <Link to="/">
+          <img
+            className="header__logo--img"
+            src={myImage}
+            alt=""
+          />
+        </Link>
       </div>
-   
-    </nav>
-
+      <div className="header__links">
+        <Link to="/">Model S</Link>
+        <Link to="/">Model 3</Link>
+        <Link to="/">Model X</Link>
+        <Link to="/">Model Y</Link>
+        <Link to="/">Solar Roof</Link>
+        <Link to="/">Solar Pannels</Link>
+      </div>
+      <div className="header__right">
+        <Link to="/" className={isMenuOpen && "headr__link--hidden"}>Shop</Link>
+        <Link to="/login" className={isMenuOpen && "headr__link--hidden"}>Tesla Account</Link>
+      
+      </div>
+    </div>
   );
 }
 
