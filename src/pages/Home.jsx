@@ -7,7 +7,9 @@ const Home = () => {
     <div>
         <Nav/>
         <div className="page__header">
-            bartas
+            <h1>
+            Home
+            </h1>
         
         </div>
     </div>
