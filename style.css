@@ -5,30 +5,212 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 body{
     display: flex;
+}
+
+section{
+    flex: 1;
+}
+
+nav {
+    background: #e5ecff;
+    width: 200px;
+    height: 100vh; /* 100% of the viewport height */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+  
+}
+
+.nav__links--primary,
+.nav__links--secondary,
+.nav__notification,
+.logout{
+    padding-top: 100px;
+}
+
+
+
+.nav__links--primary::after,
+.nav__links--secondary::after {
+    content: "";
+    display: block;
+    display: flex;
+    width: 80%;
+    height: 1px;
+    right: 10px;
+    background-color: #acafc2; /* Choose your desired line color */
+    margin-top: 10px; /* Adjust as needed to control the space between the line and the links */
 }
 
 
 .nav__link {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 6px 12px;
-    gap: 8px;
-    height: 36px;
-    width: 120px;
-    border: none;
-    background: #5e41de33;
-    border-radius: 20px;
     cursor: pointer;
+    color: #acafc2;
 }
+
+.nav__link:hover{
+    color: #4457f3;
+
+}
+.nav__link:hover .nav__link--logo i {
+    color: #4457f3; /* Change to your desired color */
+}
+
+.nav__link:hover a {
+    color:#4457f3; /* Change to your desired color */
+}
+
 
 .nav__link--logo {
     margin-right: 10px; /* Add some spacing between the logo and the link text */
 }
+.nav__link--logo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Adjust the font size as needed */
+    height: 32px; /* Adjust the font size as needed */
+    width: 32px; /* Adjust the font size as needed */
+}
+
 
 .nav__link a {
     text-decoration: none; /* Remove the underline from the links */
+}
+
+.nav__notification{
+
+    padding-left: 10%;
+    border-radius: 10px;
+}
+.nav__notification--wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    background-color: #4457f3;
+    border-radius: 10px;
+}
+
+.nav__notification--wrapper > h3, p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+
+/* 
+
+Dashboard
+
+*/
+
+#dashboard {
+    background-color: #ffffff; /* Background color for the dashboard section */
+    width: 100%;
+}
+
+.dashboard__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.dashboard__text{
+    flex: 1;
+}
+
+.dashboard__text h1 {
+    color: #4457f3;;
+    font-size: 24px; /* Adjust as needed */
+}
+.dashboard__text p {
+    color: #acafc2;
+}
+
+.dashboard__actions {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    align-items: center;
+}
+
+.dashboard__actions .peer-support-button,
+.dashboard__actions .crisis-line-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-info img {
+    width: 40px; /* Adjust avatar size */
+    height: 40px; /* Adjust avatar size */
+    border-radius: 50%;
+}
+
+.user-info p {
+    margin-left: 10px;
+}
+
+
+
+#home {
+    background-color: #fff; /* Background color for the home section */
+    padding: 20px; /* Add padding as needed */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-buttons {
+    display: flex;
+}
+
+.search-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-options ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.search-options ul li {
+    cursor: pointer;
+}
+
+.search-results {
+    /* Style your search results here */
 }
