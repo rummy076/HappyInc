@@ -14,15 +14,32 @@
     <nav>
         <div class="nav__logo">
             <img src="logo.png" alt="HappyInc Logo">
-        </div>
-        <div class="nav__links--primary">
-            <div class="nav__link">
-                <div class="nav__link--logo">
-                    <i class="fas fa-house"></i>
+            <div class="nav__links--primary">
+                <div class="nav__link">
+                    <div class="nav__link--logo">
+                        <i class="fas fa-house"></i>
+                    </div>
+                    <a href="">Home</a>
                 </div>
-                <a href="">Home</a>
+                <div class="nav__link">
+                    <div class="nav__link--logo">
+                        <i class="fas fa-map-marker"></i>
+                    </div>
+                    <a href="">Location</a>
+                </div>
+                <div class="nav__link">
+                    <div class="nav__link--logo">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <a href="">Cloud</a>
+                </div>
+                <div class="nav__link">
+                    <div class="nav__link--logo">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <a href="">Message</a>
+                </div>
             </div>
-            <!-- Other primary navigation links here -->
         </div>
         <div class="nav__links--secondary">
             <div class="nav__link">
@@ -31,7 +48,18 @@
                 </div>
                 <a href="">Accessibility</a>
             </div>
-            <!-- Other secondary navigation links here -->
+            <div class="nav__link">
+                <div class="nav__link--logo">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <a href="">Language</a>
+            </div>
+            <div class="nav__link">
+                <div class="nav__link--logo">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <a href="">Settings</a>
+            </div>
         </div>
         <div class="nav__notification">
             <div class="nav__notification--wrapper">
@@ -63,32 +91,79 @@
             </div>
         </section>
         <section id="home">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <div class="search-buttons">
-                    <button class="search-button"><i class="fas fa-search"></i></button>
-                    <button class="voice-button"><i class="fas fa-microphone"></i></button>
+            <div class="search">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <div class="search-buttons">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                        <button class="voice-button"><i class="fas fa-microphone"></i></button>
+                    </div>
+                </div>
+                <div class="search-options">
+                    <ul>
+                        <li>All</li>
+                        <li>Videos</li>
+                        <li>News</li>
+                        <li>Images</li>
+                        <li>More</li>
+                    </ul>
                 </div>
             </div>
-            <div class="search-options">
-                <ul>
-                    <li>All</li>
-                    <li>Videos</li>
-                    <li>News</li>
-                    <li>Images</li>
-                    <li>More</li>
-                </ul>
-            </div>
-            <div class="search-result">
-                <h2><a href="https://www.example.com">Example Result Title</a></h2>
-                <p class="url">www.example.com</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non vestibulum nunc. Nullam malesuada, lorem ac condimentum bibendum.</p>
-                <div class="result-info">
-                    <p>Published 2 days ago</p>
-                    <p>Rating: 4.5</p>
+            <div class="search__results">
+                <div class="search-result">
+                    <h2>Example Result Title</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non vestibulum nunc. Nullam malesuada, lorem ac condimentum bibendum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eius natus nostrum suscipit quasi sequi maxime repudiandae laboriosam nisi  odio.</p>
+                
+                    <div class="search-result">
+                        <h2>Example Result Title</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non vestibulum nunc. Nullam malesuada, lorem ac condimentum bibendum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eius natus nostrum suscipit quasi sequi maxime repudiandae laboriosam nisi  odio.</p>
+                    
+                        <div class="search-result">
+                            <h2>Example Result Title</h2>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non vestibulum nunc. Nullam malesuada, lorem ac condimentum bibendum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eius natus nostrum suscipit quasi sequi maxime repudiandae laboriosam nisi  odio.</p>     
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="row footer__row">
+              <div class="footer__list">
+                    <a
+                    href=""
+                    target="_blank"
+                    class="footer__link link__hover--effect link__hover-effect--white"
+                    target="_blank"
+                    >Privacy</a
+                    >
+                    <a
+                    href=""
+                    target="_blank"
+                    class="footer__link link__hover--effect link__hover-effect--white"
+                    target="_blank"
+                    >Demo</a
+                    >
+                    <a
+                    href="mailto:happyin50@gmail.com"
+                    target="_blank"
+                    class="footer__link link__hover--effect link__hover-effect--white"
+                    target="_blank"
+                    >Email</a
+                    >
+                    <a
+                    href=""
+                    
+            
+                    class="footer__link link__hover--effect link__hover-effect--white"
+                    target="_blank"
+                    >Terms & Condition</a
+                    >
+              </div>
+              <div class="footer__copyright">
+                    Copyright © 2023 HappyInc. All rights reserved
+              </div>
+            </div>
+        </footer>
     </section>
 </body>
 </html>
