@@ -6,6 +6,7 @@
     <title>HappyInc</title>
     <link rel="stylesheet" href="/my-react-app/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./script.js"></script>
     <style>
         /* Add your CSS styles here if needed */
     </style>
@@ -93,12 +94,13 @@
         <section id="home">
             <div class="search">
                 <div class="search-bar">
-                    <input type="text" placeholder="Search...">
+                    <input type="text" id="search-input" placeholder="Search...">
                     <div class="search-buttons">
-                        <button class="search-button"><i class="fas fa-search"></i></button>
+                        <button class="search-button" onclick="search()"><i class="fas fa-search"></i></button>
                         <button class="voice-button"><i class="fas fa-microphone"></i></button>
                     </div>
                 </div>
+                
                 <div class="search-options">
                     <ul>
                         <li>All</li>
