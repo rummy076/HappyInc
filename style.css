@@ -38,7 +38,7 @@ i:hover{
   }
   
 .link__hover-effect--white::after{
-    background-color: white;
+    background-color: red;
   }
 
 
