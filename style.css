@@ -38,7 +38,7 @@ i:hover{
   }
   
 .link__hover-effect--white::after{
-    background-color: red;
+    background-color: white;
   }
 
 
@@ -62,11 +62,40 @@ nav {
   
 }
 
-.nav__links--primary,
-.nav__links--secondary,
-.nav__notification,
+.nav__logo--img{
+    height: 40px;
+    width: 40px;
+    margin: 20px 0 20px 20px;
+}
+
+.nav__logo--wrapper{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #acafc2;
+}
+
+.nav__logo--text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4457f3;
+    margin-left: 10px;
+}
+
+.nav__links--primary{
+    padding: 20px;
+}
+
+.nav__links--secondary{
+    padding: 20px;
+}
+.nav__notification{
+    padding-top: 100px;
+}
 .logout{
     padding-top: 100px;
+    padding-left: 20px;
 }
 
 
@@ -171,6 +200,7 @@ Dashboard
 .dashboard__text h1 {
     color: #4457f3;;
     font-size: 24px; /* Adjust as needed */
+    padding-left: 20px;
 }
 .dashboard__text p {
     color: #acafc2;
@@ -196,7 +226,9 @@ Dashboard
     width: 40px; /* Adjust avatar size */
     height: 40px; /* Adjust avatar size */
     border-radius: 50%;
+    margin-top: 36px;
 }
+
 
 .user-info p {
     margin-left: 10px;
@@ -259,13 +291,13 @@ Dashboard
 .search-result > h2{
     color: #4457f3;
     text-align: left;
-    padding: 0;
+    padding-top: 20px;
 }
 
 .search-result > p{
     color: #acafc2;
     text-align: left;
-    padding: 0;
+    padding: 4px;
 }
 
 
